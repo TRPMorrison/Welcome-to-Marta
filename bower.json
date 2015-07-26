@@ -23,10 +23,8 @@
     "angular-material": "~0.10.0",
     "Cookies": "~1.2.1",
     "angular-cookies": "~1.4.2",
-
-
-    "ngModal": "~1.2.0"
-
+    "ngModal": "~1.2.0",
+    "materialize": "~0.97.0"
   },
   "devDependencies": {
     "mocha": "~2.2.5",
