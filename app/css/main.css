@@ -72,7 +72,10 @@ header {
       list-style: none;
       padding: none; }
       #dashboard_page .DBcontainer .DBNewTrips ol li button {
-        border-radius: 5px; }
+        width: 200px;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 10px; }
   #dashboard_page footer {
     width: 100%;
     clear: both; }

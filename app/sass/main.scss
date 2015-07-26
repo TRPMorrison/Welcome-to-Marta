@@ -8,389 +8,356 @@ $buttonColors:#F6F6F6;
 $table: #F6F6F6;
 $borderColor: #000000;
 $navDiv: #E42840;
-
-
 //Global Elements
-  .container {
+.container {
     background-color: $background;
-  }
+}
 
-  h1 {
+h1 {
     text-align: center;
-  }
-  //Nav Bar
-  header {
+}
+
+//Nav Bar
+header {
     background-color: $navBarColors;
     border-bottom: 2px solid $borderColor;
     height: 100px;
     nav {
-      float: right;
-      height: relative;
-      a {
-        text-decoration: none;
-        color: $background;
-        div {
-          display: inline-block;
-          height: 100px;
-          width: 25px;
-          border: 1px solid $borderColor;
-          border-bottom-left-radius: 25%;
-          background-color: $navDiv;
-          margin: 0;
-          display: hidden;
-          transition: width 2s ease;
-          position: relative;
-          p {
-            transform: rotate(85deg);
-            padding: 10px;
-
-          }
+        float: right;
+        height: relative;
+        a {
+            text-decoration: none;
+            color: $background;
+            div {
+                display: inline-block;
+                height: 100px;
+                width: 25px;
+                border: 1px solid $borderColor;
+                border-bottom-left-radius: 25%;
+                background-color: $navDiv;
+                margin: 0;
+                display: hidden;
+                transition: width 2s ease;
+                position: relative;
+                p {
+                    transform: rotate(85deg);
+                    padding: 10px;
+                }
+            }
+            div:hover {
+                width: 150px;
+                height: 100px;
+                display: absolute;
+                p {
+                    transform: rotate(0deg);
+                    transition-duration: 2000ms;
+                }
+                p:hover {
+                    font-size: 1em;
+                }
+            }
         }
-        div:hover {
-          width: 150px;
-          height: 100px;
-          display: absolute;
-          p {
-            transform: rotate(0deg);
-            transition-duration: 2000ms;
-          }
-          p:hover {
-            font-size: 1em;
-          }
+        a:visited {
+            color: $background;
         }
-      }
-      a:visited {
-        color: $background;
-      }
     }
-  }
+}
+
 //Dashboard
 #dashboard_page {
-  text-align: center;
-
-  .breakcontainer {
-    padding-right: 7px;
-    padding-left: 7px;
-  }
-  .logoutBtn {
-    border-radius: 5px;
-  }
-  .DBcontainer {
-  //Left Content Styling
-    .DBtrips {
-      width: 300px;
-      padding-right: 7px;
-      padding-left: 7px;
-      display: inline-block;
-      float: left;
-
-      .DBTripContent {
-        ol {
-          list-style: none;
-          padding: 0;
+    text-align: center;
+    .breakcontainer {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+    .logoutBtn {
+        border-radius: 5px;
+    }
+    .DBcontainer {
+        //Left Content Styling
+        .DBtrips {
+            width: 300px;
+            padding-right: 7px;
+            padding-left: 7px;
+            display: inline-block;
+            float: left;
+            .DBTripContent {
+                ol {
+                    list-style: none;
+                    padding: 0;
+                }
+            }
         }
-      }
-    }
-
-    //Map Styling
-    .martaMap {
-      width: 300px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      display: inline;
-
-    }
-    //Right Content Styling
-    .DBNewTrips {
-      width: 300px;
-      padding-right: 7px;
-      padding-left: 7px;
-      display: inline-block;
-      float: right;
-      margin-bottom: 15px;
-      ol {
-        list-style: none;
-        padding: none;
-        li {
-          button {
-            border-radius: 5px;
-          }
+        //Map Styling
+        .martaMap {
+            width: 300px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            display: inline;
         }
-      }
+        //Right Content Styling
+        .DBNewTrips {
+            width: 300px;
+            padding-right: 7px;
+            padding-left: 7px;
+            display: inline-block;
+            float: right;
+            margin-bottom: 15px;
+            ol {
+                list-style: none;
+                padding: none;
+                li {
+                    button {
+                        width: 200px;
+                        height: 35px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
     }
-  }
-  footer {
-    width: 100%;
-    clear: both;
-    img {
-      width: 0;
+    footer {
+        width: 100%;
+        clear: both;
+        img {
+            width: 0;
+        }
     }
-  }
 }
 
 //Trains
 #trains_page {
-
-text-align: center;
-
-  .trainCont1 {
-    max-width: 320px;
-    float: left;
-    margin-bottom: 70px;
-
-        .TrainH {
-          padding-right: 10%;
-          padding-left: 10%;
-        }
-      .trainTBL1 {
-        display: inline;
-        label {
-          text-align: center;
-        }
-
-        .trainTable {
-          width: 320px;
-          display: inline;
-          border: 1px solid black;
-        }
-      }
-   }
-
-  table {
-    font-size: .6em;
-    border: 1px solid black;
-    th {
-      padding-left: 10px;
-      padding-right: 10px;
-      border: 1px solid black;
-      tr {
-        border: 1px solid black;
-      }
-      .station {
-        border: 1px solid black;
-        text-align: left;
-      }
-      td {
-        text-align: center;
-        padding: 5px;
-        border: 1px solid $borderColor;
-        background-color: $table;
-      }
-    }
-  }
-.trainCont2 {
-  width: 320px;
-  float: right;
-  margin-top: -51px;
-  label {
     text-align: center;
-  }
-  .TrainH {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-    .trainTBL2 {
-      display: inline;
-      .TrainH {
-        padding-right: 10%;
-        padding-left: 10%;
-      }
+    .trainCont1 {
+        max-width: 320px;
+        float: left;
+        margin-bottom: 70px;
+        .TrainH {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        .trainTBL1 {
+            display: inline;
+            label {
+                text-align: center;
+            }
+            .trainTable {
+                width: 320px;
+                display: inline;
+                border: 1px solid black;
+            }
+        }
     }
-  }
+    table {
+        font-size: .6em;
+        border: 1px solid black;
+        th {
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid black;
+            tr {
+                border: 1px solid black;
+            }
+            .station {
+                border: 1px solid black;
+                text-align: left;
+            }
+            td {
+                text-align: center;
+                padding: 5px;
+                border: 1px solid $borderColor;
+                background-color: $table;
+            }
+        }
+    }
+    .trainCont2 {
+        width: 320px;
+        float: right;
+        margin-top: -51px;
+        label {
+            text-align: center;
+        }
+        .TrainH {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .trainTBL2 {
+            display: inline;
+            .TrainH {
+                padding-right: 10%;
+                padding-left: 10%;
+            }
+        }
+    }
 }
 
 //Buses
-
-
 #bus_page {
-
-  .TPh1 {
-    padding: 0;
-    margin: 0;
-    h2 {
-      text-align: center;
+    .TPh1 {
+        padding: 0;
+        margin: 0;
+        h2 {
+            text-align: center;
+        }
     }
-
-  }
- .busTBL1 {
-    display: inline;
-    float: left;
-    margin-bottom: 50px;
-
-    .BusH {
-      padding-right: 7px;
-      padding-right: 7px;
-      text-align: center;
-
-      .BusCap {
-        font-weight: 800;
-        font-size: 1em;
-      }
+    .busTBL1 {
+        display: inline;
+        float: left;
+        margin-bottom: 50px;
+        .BusH {
+            padding-right: 7px;
+            padding-right: 7px;
+            text-align: center;
+            .BusCap {
+                font-weight: 800;
+                font-size: 1em;
+            }
+        }
     }
-
-  }
-  .busTBL2 {
-    display: inline;
-    float: left;
-    margin-top: -54px;
-    margin-left: auto;
-
-    .BusH {
-      padding-right: 7px;
-      padding-left: 7px;
-      text-align: center;
-
-      .BusCap {
-        font-weight: 800;
-        font-size: 1em;
-      }
+    .busTBL2 {
+        display: inline;
+        float: left;
+        margin-top: -54px;
+        margin-left: auto;
+        .BusH {
+            padding-right: 7px;
+            padding-left: 7px;
+            text-align: center;
+            .BusCap {
+                font-weight: 800;
+                font-size: 1em;
+            }
+        }
     }
-  }
-  label {
-    display: inline;
-
-  }
- table {
-    display: inline;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    padding: 4px;
-    font-size: .57em;
-
-    th {
-      margin-left: 10px;
-      margin-right: 10px;
+    label {
+        display: inline;
     }
-    .location {
-      text-align: left;
+    table {
+        display: inline;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        padding: 4px;
+        font-size: .57em;
+        th {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .location {
+            text-align: left;
+        }
+        .vehicle {
+            text-align: right;
+        }
+        td {
+            text-align: center;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: $table;
+        }
     }
-    .vehicle {
-      text-align: right;
-    }
-    td {
-      text-align: center;
-      padding: 5px;
-      border: 1px solid black;
-      background-color: $table;
-    }
-  }
 }
-
-
-
 
 //About Page Style
 #about_page {
-  text-align: center;
-
-  .headerContainer {
-    padding-right: 7px;
-    padding-left: 7px;
-  }
-
-  .bobby {
-    .APimg1 {
-      width: 250px;
+    text-align: center;
+    .headerContainer {
+        padding-right: 7px;
+        padding-left: 7px;
     }
-    button {
-      border-radius: 5px;
+    .bobby {
+        .APimg1 {
+            width: 250px;
+        }
+        button {
+            border-radius: 5px;
+        }
+        a img {
+            width: 60px;
+            height: 60px;
+        }
     }
-    a img {
-      width: 60px;
-      height: 60px;
-    }
-
-  }
 }
 
 //Contact Style
- #contact_page {
-  text-align: center;
-
-  .CPh1 {
+#contact_page {
     text-align: center;
-  }
-  .emailUsContainer {
-
-    .APimg2 {
-      width: 30%;
+    .CPh1 {
+        text-align: center;
     }
-  }
-
-  .contactMartaContainer {
-
-    .APimg3 {
-      width: 75%;
+    .emailUsContainer {
+        .APimg2 {
+            width: 30%;
+        }
     }
-  }
+    .contactMartaContainer {
+        .APimg3 {
+            width: 75%;
+        }
+    }
+    .APimg1 {
+        width: 75%;
+    }
+}
 
-  .APimg1 {
-    width: 75%;
-  }
- }
 //Login Style
-
 #login_container {
-  height: 450px;
-
-  h1 {
-    text-align: center;
-    font-size: 2em;
-  }
-
-  form {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    .input1 {
-      height: 25px;
-      width: 225px;
-      display: inline;
-      margin: 20px;
+    height: 450px;
+    h1 {
+        text-align: center;
+        font-size: 2em;
     }
-    .input2 {
-      height: 25px;
-      width: 225px;
-      display: inline;
-      margin: 20px;
+    form {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        .input1 {
+            height: 25px;
+            width: 225px;
+            display: inline;
+            margin: 20px;
+        }
+        .input2 {
+            height: 25px;
+            width: 225px;
+            display: inline;
+            margin: 20px;
+        }
+        .LGbutton {
+            clear: both;
+            display: inline-block;
+            width: 300px;
+            margin: 0 20px 20px 20px;
+        }
     }
-    .LGbutton {
-      clear: both;
-      display: inline-block;
-      width: 300px;
-      margin: 0 20px 20px 20px;
+    h2 {
+        text-align: center;
+        a {
+            text-decoration: none;
+        }
+        a:visited {
+            color: $visitedLink;
+        }
     }
-  }
-  h2 {
-    text-align: center;
-    a {
-      text-decoration: none;
-    }
-    a:visited {
-      color: $visitedLink;
-    }
-  }
 }
 
 //Registration Style
-
 #registration_page {
-  text-align: center;
-  h1 {
     text-align: center;
-  }
-  form {
-    min-width: 300px;
-    input {
-      width: 175px;
-      margin: 10px 5px;
+    h1 {
+        text-align: center;
     }
-    button {
-      clear: both;
-      border-radius: 5px;
+    form {
+        min-width: 300px;
+        input {
+            width: 175px;
+            margin: 10px 5px;
+        }
+        button {
+            clear: both;
+            border-radius: 5px;
+        }
     }
-  }
 }
