@@ -11,6 +11,7 @@ $navDiv: #E42840;
 //Global Elements
 .container {
     background-color: $background;
+    width: 100%;
 }
 
 h1 {
@@ -23,11 +24,14 @@ header {
     border-bottom: 2px solid $borderColor;
     height: 100px;
     nav {
+        background-color: $navBarColors;
         float: right;
-        height: relative;
+        // height: relative;
+        height: 100px;
         a {
             text-decoration: none;
             color: $background;
+            float: right;
             div {
                 display: inline-block;
                 height: 100px;
