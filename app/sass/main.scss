@@ -22,16 +22,16 @@ h1 {
 header {
     background-color: $navBarColors;
     border-bottom: 2px solid $borderColor;
-    height: 100px;
+    // height: 100px;
     nav {
         background-color: $navBarColors;
-        float: right;
+        // float: right;
         // height: relative;
         height: 100px;
         a {
             text-decoration: none;
             color: $background;
-            float: right;
+            // float: right;
             div {
                 display: inline-block;
                 height: 100px;
@@ -46,6 +46,7 @@ header {
                 p {
                     transform: rotate(85deg);
                     padding: 10px;
+                    margin-top: 0px;
                 }
             }
             div:hover {
